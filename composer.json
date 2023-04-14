@@ -1,0 +1,38 @@
+{
+    "name": "alealcorta/resuelve-formulas",
+    "description": "Recibe formulas a resolver y devuelve su resultado",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alejandra Alcorta",
+            "email": "alejandra.alcorta@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "9.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "orchestra/testbench": "5.*"
+    },
+    "autoload": {
+        "psr-4":{
+            "resuelveFormulas\\": "src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "Tests\\": "tests"
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "resuelveFormulas\\ResuelveFormulasServiceProvider"
+            ]
+        }
+    }
+}
